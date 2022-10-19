@@ -15,6 +15,9 @@ public class Circle extends Shape{
 
     @Override
     public void draw() {
-        drawingAPI.drawCircle(radius, x, y);
+        if (drawingAPI != null)
+            drawingAPI.drawCircle(radius, x, y);
+        else
+            System.out.println("drawCircle() method");
     }
 }
