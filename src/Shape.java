@@ -3,6 +3,7 @@ public abstract class Shape implements Cloneable {
     protected String type;
     protected DrawingAPI drawingAPI;
 
+
     protected Shape(DrawingAPI drawingAPI) {
         this.drawingAPI = drawingAPI;
     }
